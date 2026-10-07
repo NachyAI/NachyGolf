@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NachyGolf</title>
 <meta name="description" content="NachyGolf apparel, golf gear and content.">
-<link rel="stylesheet" href="home.css?v=4">
+<link rel="stylesheet" href="home.css?v=5">
 </head>
 <body>
 <header class="topbar">
   <a class="logo" href="index.html"><span>Nachy</span>Golf</a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   <nav><a href="shop.html">Shop</a><a href="#videos">Videos</a><a href="#about">About</a></nav>
   <div class="tools"><a class="search" href="shop.html" aria-label="Search products"></a><a class="bag" href="cart.html" aria-label="Cart"><span data-cart-count>0</span></a></div>
 </header>
@@ -40,5 +41,5 @@
 </main>
 
 <footer><a class="logo" href="index.html"><span>Nachy</span>Golf</a><p>Play your game. Have fun. Get better.</p><div><a href="shop.html">Shop</a><a href="#videos">Videos</a><a href="#about">About</a></div><small>© 2026 NachyGolf. All rights reserved.</small></footer>
-<script src="store.js?v=20261007"></script>
+<script src="store.js?v=20261007"></script><script>const m=document.querySelector(".menu-toggle"),n=document.querySelector(".topbar nav");if(m&&n){m.onclick=()=>{const o=n.classList.toggle("open");m.setAttribute("aria-expanded",o);m.textContent=o?"×":"☰"};n.querySelectorAll("a").forEach(a=>a.onclick=()=>{n.classList.remove("open");m.setAttribute("aria-expanded","false");m.textContent="☰"})}</script>
 </body></html>
