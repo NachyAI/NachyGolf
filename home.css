@@ -17,3 +17,7 @@
 .exact-lookbook{display:block!important;height:auto!important;background:#111!important;overflow:hidden}
 .exact-lookbook>img{display:block;width:100%;height:auto}
 @media(max-width:600px){.exact-hero{overflow-x:hidden}.exact-hero>img{width:150%;max-width:none;transform:translateX(-3%)}.exact-lookbook>img{width:150%;max-width:none;transform:translateX(-10%)}}
+
+/* v3 finishing pass */
+.topbar{position:sticky;top:0;z-index:50}.topbar nav a,.tools a{transition:opacity .18s,color .18s}.topbar nav a:hover{color:#0668ff}.tools a:hover{opacity:.55}.exact-hero>img,.exact-lookbook>img{user-select:none;-webkit-user-drag:none}.hero-hit{border-radius:14px}.hero-hit:focus-visible{outline:3px solid #0668ff;outline-offset:3px}.products>a{display:block;transition:transform .18s ease}.products>a:hover{transform:translateY(-3px)}.products>a:hover h3{color:#0668ff}.photo img{transition:transform .25s ease}.products>a:hover .photo img{transform:scale(1.025)}
+@media(min-width:1400px){.topbar{padding-left:6.1%;padding-right:6.1%}.featured{padding-left:5%;padding-right:5%}}
