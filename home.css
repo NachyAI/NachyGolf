@@ -48,3 +48,8 @@
 .hero-v7{aspect-ratio:1536/650;overflow:hidden}
 .hero-v7>img{width:100%;height:auto;display:block}
 @media(max-width:760px){.hero-v7{aspect-ratio:1536/650}.hero-v7>img{width:155%;max-width:none;transform:translateX(-27%)}}
+
+/* v11 definitive crop: source composite is 1536x1024; hero ends at y=650 */
+.clean-hero{height:auto!important;aspect-ratio:1536/650!important;min-height:0!important;overflow:hidden!important;position:relative}
+.clean-hero>img{position:absolute!important;inset:0 auto auto 0!important;width:100%!important;height:auto!important;max-width:none!important;transform:none!important}
+@media(max-width:760px){.clean-hero{aspect-ratio:1536/650!important}.clean-hero>img{width:100%!important;transform:none!important}}
