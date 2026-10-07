@@ -8,3 +8,12 @@
 
 @media(max-width:900px){.topbar nav{gap:24px}.hero{height:auto;grid-template-columns:1fr}.hero-copy{padding:55px 6% 25px}.hero-hat img{height:330px}.lookbook{height:auto;grid-template-columns:1fr 1fr}.tile{height:220px}.products{grid-template-columns:1fr 1fr}.videos{grid-template-columns:1fr}.ghost{display:none}}
 @media(max-width:600px){.topbar{grid-template-columns:1fr auto}.topbar nav{display:none}.hero h1{font-size:55px;letter-spacing:-4px}.hero-copy p{font-size:17px}.actions{flex-direction:column}.actions a{width:100%}.lookbook{grid-template-columns:1fr 1fr}.tile{height:175px}.products{grid-template-columns:1fr}.photo{height:350px}.section-title h2{font-size:30px}.videos h2{font-size:48px}.about h2{font-size:50px}}
+/* Exact approved mockup imagery */
+.exact-hero{display:block!important;height:auto!important;min-height:0!important;position:relative;background:#fff!important;overflow:hidden}
+.exact-hero>img{display:block;width:100%;height:auto}
+.hero-hit{position:absolute;z-index:5;display:block}
+.shop-hit{left:5.55%;top:70.6%;width:15.3%;height:16.2%}
+.video-hit{left:22.15%;top:70.6%;width:16.9%;height:16.2%}
+.exact-lookbook{display:block!important;height:auto!important;background:#111!important;overflow:hidden}
+.exact-lookbook>img{display:block;width:100%;height:auto}
+@media(max-width:600px){.exact-hero{overflow-x:hidden}.exact-hero>img{width:150%;max-width:none;transform:translateX(-3%)}.exact-lookbook>img{width:150%;max-width:none;transform:translateX(-10%)}}
