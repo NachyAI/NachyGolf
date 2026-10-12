@@ -72,3 +72,17 @@
 .clean-hero .video-hit-v7{top:43%!important}
 .clean-hero .view-hit-v7{display:none!important}
 @media(max-width:760px){.clean-hero{aspect-ratio:1536/580!important}.clean-hero>img{width:100%!important;top:-4.5573vw!important;transform:none!important}}
+
+/* v14 homepage link audit: clickable regions match visible hero CTAs.
+   The composite header is cropped by 70px, buttons are around y=395px. */
+.clean-hero .shop-hit-v7,.clean-hero .video-hit-v7{top:65%!important;height:12%!important;z-index:20!important;display:block}
+.clean-hero .shop-hit-v7{left:10.3%!important;width:16.5%!important}
+.clean-hero .video-hit-v7{left:27.7%!important;width:17%!important}
+.hero-mobile-actions{display:none}
+@media(max-width:760px){
+.clean-hero .shop-hit-v7,.clean-hero .video-hit-v7{display:none!important}
+.clean-hero{overflow:visible!important;margin-bottom:66px}
+.hero-mobile-actions{display:flex;position:absolute;top:100%;left:0;right:0;background:#050505;padding:10px 16px;gap:10px;z-index:8}
+.hero-mobile-actions a{flex:1;text-align:center;padding:12px 5px;background:#0668ff;color:#fff;font-size:12px;font-weight:800;border-radius:6px}
+.hero-mobile-actions a+ a{background:#191919;border:1px solid #777}
+}
