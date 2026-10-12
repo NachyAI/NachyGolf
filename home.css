@@ -16,3 +16,6 @@
 
 /* Separate registration page */
 .auth-tab-link{display:block;flex:1;text-align:center;padding:12px 8px;color:#aeb2b6;text-decoration:none}.auth-card .optional{font-weight:400;color:#aab0b5}.address-heading{font-weight:700;margin-top:28px;border-top:1px solid #383a3d;padding-top:22px}.register-layout{align-items:start}.register-layout .auth-intro{padding-top:45px}.auth-card .auth-fineprint a{color:#fff;text-decoration:underline}.auth-card input:focus{outline:2px solid #f02d35;outline-offset:1px}
+
+/* My Account */
+.account-page{max-width:1120px;margin:auto;min-height:70vh;padding:75px 28px 110px}.account-page h1{font-size:clamp(46px,7vw,78px);letter-spacing:-.05em;margin:16px 0 28px}.account-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(270px,.75fr);gap:28px;align-items:start}.account-grid .auth-card h3{margin-top:34px;font-size:19px}.account-grid .auth-card p{line-height:1.65;color:#b9bec3}.account-grid .auth-card a:not(.members-button){color:#fff}.account-page #account-status{min-height:24px;color:#d2d5d8;margin-bottom:24px}.account-page #account-guest{max-width:480px}.account-page input[readonly]{opacity:.65}@media(max-width:780px){.account-grid{grid-template-columns:1fr}.account-page{padding:55px 20px}}
