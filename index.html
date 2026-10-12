@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NachyGolf — Play Your Game</title><meta name="description" content="NachyGolf. Golf apparel, gear and videos. Play your game.">
-<link rel="stylesheet" href="home.css?v=20261011-simple"></head>
+<link rel="stylesheet" href="home.css?v=20261011-logo"></head>
 <body>
 <header class="topbar">
-<a class="brand" href="index.html" aria-label="NachyGolf home"><span class="monogram"><span>N</span><b>G</b></span><span class="brand-name">NACHYGOLF</span></a>
+<a class="brand" href="index.html" aria-label="NachyGolf home"><img class="ng-logo" src="assets/ng-logo.svg" alt="NG"><span class="brand-name">NACHYGOLF</span></a>
 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
 <nav id="main-nav" aria-label="Main navigation"><a class="active" href="index.html">Home</a><a href="shop.html">Store</a><a href="https://www.youtube.com/@NACHYGOLF/videos" target="_blank" rel="noopener">Videos</a><a href="#about">About</a></nav>
 <a class="cart" href="cart.html" aria-label="View cart">Cart <span data-cart-count>0</span></a>
 </header>
 <main>
 <section class="hero">
-<div class="hero-inner"><p class="eyebrow">NACHYGOLF · EST. 2026</p><div class="hero-mark" aria-hidden="true"><span>N</span><b>G</b></div>
+<div class="hero-inner"><p class="eyebrow">NACHYGOLF · EST. 2026</p><img class="hero-logo" src="assets/ng-logo.svg" alt="NachyGolf NG logo">
 <h1>GOLF YOUR WAY.</h1><p class="lead">Clean gear. Good rounds. Better days.</p>
 <div class="actions"><a class="btn primary" href="shop.html">SHOP THE STORE <span aria-hidden="true">↗</span></a><a class="btn outline" href="https://www.youtube.com/@NACHYGOLF/videos" target="_blank" rel="noopener">WATCH THE VIDEOS <span aria-hidden="true">↗</span></a></div></div>
 <div class="hero-line" aria-hidden="true"></div>
@@ -24,7 +24,7 @@
 </div></section>
 <section id="about" class="about"><div><p class="eyebrow">MORE THAN A SCORE</p><h2>PLAY YOUR GAME.</h2><p>NachyGolf is for the everyday golfer. Enjoy the round, chase improvement, and have fun doing it.</p></div><a href="https://www.youtube.com/@NACHYGOLF/videos" target="_blank" rel="noopener">FOLLOW THE JOURNEY ↗</a></section>
 </main>
-<footer><a class="footer-brand" href="index.html"><span>N</span>G <small>NACHYGOLF</small></a><p>Golf your way.</p><small>© 2026 NachyGolf</small></footer>
+<footer><a class="footer-brand" href="index.html"><img class="footer-logo" src="assets/ng-logo.svg" alt="NG"> <small>NACHYGOLF</small></a><p>Golf your way.</p><small>© 2026 NachyGolf</small></footer>
 <script src="store.js?v=20261007"></script>
 <script>const t=document.querySelector('.menu-toggle'),n=document.querySelector('#main-nav');t.addEventListener('click',()=>{const open=n.classList.toggle('open');t.setAttribute('aria-expanded',String(open));t.textContent=open?'×':'☰'});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded','false');t.textContent='☰'}));</script>
 </body></html>
