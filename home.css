@@ -19,3 +19,6 @@
 
 /* My Account */
 .account-page{max-width:1120px;margin:auto;min-height:70vh;padding:75px 28px 110px}.account-page h1{font-size:clamp(46px,7vw,78px);letter-spacing:-.05em;margin:16px 0 28px}.account-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(270px,.75fr);gap:28px;align-items:start}.account-grid .auth-card h3{margin-top:34px;font-size:19px}.account-grid .auth-card p{line-height:1.65;color:#b9bec3}.account-grid .auth-card a:not(.members-button){color:#fff}.account-page #account-status{min-height:24px;color:#d2d5d8;margin-bottom:24px}.account-page #account-guest{max-width:480px}.account-page input[readonly]{opacity:.65}@media(max-width:780px){.account-grid{grid-template-columns:1fr}.account-page{padding:55px 20px}}
+
+/* Member icon beside cart */
+.account-icon{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:inherit;text-decoration:none;margin-left:auto;margin-right:14px;width:34px;height:36px}.account-icon:hover,.account-icon:focus-visible{color:#f02d35}.account-icon svg{display:block}.topbar>.account-icon+.cart{margin-left:0}@media(max-width:650px){.account-icon{margin-right:8px;width:30px}}
