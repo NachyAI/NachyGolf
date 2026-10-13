@@ -25,3 +25,6 @@
 
 /* Floating Rewards shortcut */
 .floating-rewards{position:fixed;right:22px;bottom:22px;z-index:999;display:inline-flex;align-items:center;gap:9px;padding:13px 18px;background:#e52c36;color:#fff!important;text-decoration:none;font-weight:750;font-size:14px;letter-spacing:.02em;border-radius:999px;box-shadow:0 7px 24px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.15);line-height:1.2}.floating-rewards:hover,.floating-rewards:focus-visible{background:#bc2029;transform:translateY(-2px)}@media(max-width:600px){.floating-rewards{right:14px;bottom:14px;padding:12px 15px;font-size:13px}}
+
+/* Sign In next to My Account icon */
+.header-signin{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;font-size:13px;font-weight:700;color:inherit;text-decoration:none;margin-left:auto;margin-right:12px}.header-signin:hover,.header-signin:focus-visible{color:#f02d35}.header-signin+.account-icon{margin-left:0}@media(max-width:650px){.header-signin{font-size:12px;margin-right:7px}}
