@@ -31,3 +31,21 @@
 
 /* Keep Sign In directly beside account icon at far right */
 .header-actions{display:flex;align-items:center;justify-content:flex-end;gap:14px;margin-left:auto;flex-shrink:0}.header-actions .header-signin,.header-actions .account-icon{margin:0}.header-actions .account-icon{width:30px;height:36px}.header-actions .cart{margin:0}@media(max-width:650px){.header-actions{gap:9px}}
+
+
+/* 2026 NachyGolf palette refresh: emerald + warm gold, retaining red brand details */
+:root{--golf-green:#38b78a;--golf-gold:#d6b77b}
+.hero{background:radial-gradient(ellipse at 85% 43%,rgba(31,93,74,.36) 0%,#141b1b 39%,#090a0b 75%)}
+.hero:after{border-left-color:rgba(56,183,138,.24);background:linear-gradient(100deg,transparent,rgba(56,183,138,.035))}
+.hero-line{background:linear-gradient(90deg,var(--red) 0%,var(--golf-green) 44%,var(--golf-gold) 75%,transparent 100%)}
+.hero .eyebrow,.featured .eyebrow{color:var(--golf-green)}
+.featured .section-heading>a:hover,.product:hover h3{color:var(--golf-green)}
+.product-image{background:linear-gradient(145deg,#19241f,#181a1c 70%);border-color:#2a3933}
+.product:hover .product-image{border-color:rgba(56,183,138,.6)}
+.about{background:linear-gradient(110deg,#111b17,#111314 72%);border-top-color:#2b4136}
+.about .eyebrow{color:var(--golf-gold)}
+.about>a{border-bottom-color:var(--golf-green)}
+.topbar nav a:hover{color:var(--golf-green)}
+.topbar nav .active{color:var(--golf-gold)}
+.btn.primary:hover,.members-button:hover{background:#c5232d}
+a:focus-visible,button:focus-visible{outline:2px solid var(--golf-green);outline-offset:3px}
