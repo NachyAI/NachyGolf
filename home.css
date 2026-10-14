@@ -74,3 +74,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--golf-green);outline
 .fw-shop-footer{text-align:center;padding:0 20px 85px}.fw-shop-footer a{display:inline-block;background:#267457;color:white;padding:15px 26px;border-radius:5px;font-weight:800;text-decoration:none}
 @media(max-width:800px){.fw-live-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.fw-live-image{height:250px}}
 @media(max-width:480px){.fw-live-grid{grid-template-columns:1fr}.fw-live-image{height:330px}.fw-live-info{font-size:13px}}
+
+/* NachyGolf monochrome redesign — black backgrounds, white typography */
+:root{--bg:#000;--panel:#080808;--red:#fff;--golf-green:#fff;--golf-gold:#fff;--white:#fff;--muted:#c6c6c6}
+html,body{background:#000!important;color:#fff!important}
+.topbar,.nav,.nav.light-nav,.simple-shop .nav.light-nav,header,footer,.simple-shop footer,.hero,.about,.featured,.simple-store,.shop-title,.simple-shop .shop-title,.section,.video-section,.lifestyle-band{background:#000!important;color:#fff!important;background-image:none!important}
+.hero:after,.hero-line{display:none!important}
+.eyebrow,.topbar nav .active,.topbar nav a:hover,.nav nav a:hover,.simple-shop .eyebrow,.simple-shop .nav nav a.selected,.simple-shop .nav nav a:hover{color:#fff!important}
+.brand,.brand span,.brand-name,.header-actions a,.section-heading a,.footer-brand,.simple-shop .brand{color:#fff!important}
+.primary,.btn.primary,.fw-shop-footer a,.members-button{background:#fff!important;color:#000!important;border-color:#fff!important}
+.fw-live-grid{color:#fff!important}
+.fw-live-card,.fw-live-info,.fw-live-info span{color:#fff!important}
+.fw-live-image,.product-image,.simple-shop .photo-wrap{background:#090909!important;background-image:none!important;border:1px solid #303030!important;color:#fff!important}
+.fw-live-card:hover .fw-live-image{border-color:#fff!important}
+.cart,.simple-shop .cart{color:#fff!important;border-color:#555!important;background:#000!important}
+.cart span,.cart b{background:#fff!important;color:#000!important}
+footer,.topbar,.nav,.simple-shop .nav.light-nav,.about{border-color:#262626!important}
+button:focus-visible,a:focus-visible{outline:2px solid #fff!important;outline-offset:3px}
