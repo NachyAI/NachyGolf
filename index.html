@@ -27,4 +27,40 @@
 <footer><a class="footer-brand" href="index.html"><img class="footer-logo" src="assets/ng-logo.svg" alt="NG"> <small>NACHYGOLF</small></a><p>Golf your way.</p><small>© 2026 NachyGolf</small></footer>
 <script src="store.js?v=20261007"></script>
 <script>const t=document.querySelector('.menu-toggle'),n=document.querySelector('#main-nav');t.addEventListener('click',()=>{const open=n.classList.toggle('open');t.setAttribute('aria-expanded',String(open));t.textContent=open?'×':'☰'});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded','false');t.textContent='☰'}));</script>
-<a class="floating-rewards" href="rewards.html" aria-label="NachyGolf Rewards"><span aria-hidden="true">★</span> Rewards</a></body></html>
+<a class="floating-rewards" href="rewards.html" aria-label="NachyGolf Rewards"><span aria-hidden="true">★</span> Rewards</a>
+<style>
+.twitch-overlay{position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:9998;display:none;align-items:center;justify-content:center;padding:20px}
+.twitch-overlay.is-visible{display:flex}
+.twitch-dialog{position:relative;width:min(100%,420px);background:#171719;border:1px solid #3a303f;border-radius:16px;padding:36px 28px;text-align:center;color:#fff;box-shadow:0 22px 70px #0009;font-family:inherit}
+.twitch-dialog .twitch-eyebrow{color:#bfa0fa;font-size:12px;letter-spacing:.17em;font-weight:700}
+.twitch-dialog h2{font-size:clamp(25px,5vw,34px);line-height:1.12;margin:15px 0 12px}
+.twitch-dialog p{color:#ccc;line-height:1.5;margin:0 0 24px}
+.twitch-watch{display:inline-block;background:#9146ff;color:white;text-decoration:none;border-radius:8px;padding:14px 24px;font-weight:800;letter-spacing:.03em}
+.twitch-watch:hover{background:#772ce8}
+.twitch-close{position:absolute;top:10px;right:12px;background:transparent;border:0;color:#ccc;font-size:27px;cursor:pointer;padding:4px 9px}
+</style>
+<div class="twitch-overlay" id="twitch-promo" aria-hidden="true">
+ <div class="twitch-dialog" role="dialog" aria-modal="true" aria-labelledby="twitch-title" aria-describedby="twitch-desc">
+  <button type="button" class="twitch-close" aria-label="Close Twitch popup">×</button>
+  <span class="twitch-eyebrow">NACHY GAMING</span>
+  <h2 id="twitch-title">WATCH NACHY ON TWITCH</h2>
+  <p id="twitch-desc">Gaming, streams, and good times. Come hang out with the community.</p>
+  <a class="twitch-watch" href="https://www.twitch.tv/realnachy" target="_blank" rel="noopener noreferrer">WATCH ON TWITCH ↗</a>
+ </div>
+</div>
+<script>
+(function(){
+ const overlay=document.getElementById('twitch-promo');
+ const close=overlay.querySelector('.twitch-close');
+ const key='nachygolf-twitch-popup-dismissed';
+ let dismissed=false;
+ try{dismissed=sessionStorage.getItem(key)==='1'}catch(e){}
+ function hide(){overlay.classList.remove('is-visible');overlay.setAttribute('aria-hidden','true');try{sessionStorage.setItem(key,'1')}catch(e){}}
+ close.addEventListener('click',hide);
+ overlay.addEventListener('click',e=>{if(e.target===overlay)hide()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('is-visible'))hide()});
+ overlay.querySelector('.twitch-watch').addEventListener('click',hide);
+ if(!dismissed){setTimeout(()=>{overlay.classList.add('is-visible');overlay.setAttribute('aria-hidden','false');close.focus()},3500)}
+})();
+</script>
+</body></html>
