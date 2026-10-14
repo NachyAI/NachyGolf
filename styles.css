@@ -27,3 +27,45 @@
 
 /* Keep Sign In directly beside account icon at far right */
 .header-actions{display:flex;align-items:center;justify-content:flex-end;gap:14px;margin-left:auto;flex-shrink:0}.header-actions .header-signin,.header-actions .account-icon{margin:0}.header-actions .account-icon{width:30px;height:36px}.header-actions .cart{margin:0}@media(max-width:650px){.header-actions{gap:9px}}
+
+/* NachyGolf Store — coordinated dark / emerald / gold brand refresh */
+body.simple-shop{background:#090a0b;color:#f5f5f5}
+.simple-shop .nav.light-nav{height:82px;background:#0c0d0e;color:#f5f5f5;border-bottom:1px solid #26322d;padding:0 clamp(22px,6vw,96px);gap:34px}
+.simple-shop .nav .brand{font-style:normal;letter-spacing:3px;font-size:13px;font-weight:800;white-space:nowrap}
+.simple-shop .nav .brand .brand-name{color:#f5f5f5}
+.simple-shop .nav nav{display:flex;align-items:center;gap:38px;margin:auto;font-size:13px;letter-spacing:1.6px}
+.simple-shop .nav nav a:hover{color:#38b78a}
+.simple-shop .nav nav a.selected{color:#d6b77b}
+.simple-shop .header-actions{gap:14px}
+.simple-shop .header-signin:hover,.simple-shop .account-icon:hover{color:#38b78a}
+.simple-shop .cart.light-cart{border:0;background:transparent;color:#f5f5f5;border-radius:0;padding:0;font-size:13px;font-weight:700;white-space:nowrap}
+.simple-shop .cart.light-cart b{background:#f02d35;border-radius:20px;padding:3px 7px;font-size:11px}
+.simple-shop .simple-store{background:#090a0b;color:#f5f5f5}
+.simple-shop .shop-title{padding:92px 6vw 68px;background:radial-gradient(ellipse at 82% 45%,rgba(31,93,74,.36),#141b1b 42%,#090a0b 76%);border-bottom:3px solid transparent;border-image:linear-gradient(90deg,#f02d35,#38b78a 46%,#d6b77b 80%,transparent) 1}
+.simple-shop .shop-title .eyebrow{color:#38b78a;letter-spacing:3.5px;font-size:11px}
+.simple-shop .shop-title h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.055em;line-height:1.05;margin:15px 0}
+.simple-shop .shop-title>p:last-child{color:#c2c5c6;font-size:18px}
+.simple-shop .simple-filters{padding:35px 5vw 36px}
+.simple-shop .simple-filters .filter{background:#151b18;color:#f5f5f5;border:1px solid #345044;padding:12px 23px}
+.simple-shop .simple-filters .filter.active,.simple-shop .simple-filters .filter:hover{background:#256a51;color:#fff;border-color:#38b78a}
+.simple-shop .photo-grid{max-width:1250px;padding:0 32px 95px;gap:40px 22px}
+.simple-shop .photo-card{color:#f5f5f5}
+.simple-shop .photo-wrap{height:370px;background:linear-gradient(145deg,#19241f,#181a1c 70%);border:1px solid #2a3933;border-radius:6px}
+.simple-shop .photo-card:not(.future):hover .photo-wrap{border-color:#38b78a}
+.simple-shop .photo-info h2{font-size:15px;color:#f5f5f5}
+.simple-shop .photo-info p{color:#aeb7b2}
+.simple-shop .photo-info>strong{color:#d6b77b}
+.simple-shop .new-tag{background:#38b78a;color:#09120e}
+.simple-shop .placeholder-clean{background:#19241f;color:#38b78a}
+.simple-shop .lifestyle-band{max-width:1186px;margin:0 auto 90px;min-height:440px;background:linear-gradient(110deg,#111b17,#111314);border:1px solid #2b4136}
+.simple-shop .lifestyle-band img{background:#202521;object-fit:contain}
+.simple-shop .lifestyle-band .eyebrow{color:#d6b77b}
+.simple-shop .lifestyle-band h2{font-size:clamp(35px,5vw,60px);letter-spacing:-2px;line-height:1}
+.simple-shop .lifestyle-band>div>p:last-child{color:#b6b8bb}
+.simple-shop footer{background:#090a0b;color:#85888b;border-top:1px solid #242627;padding:35px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left}
+.simple-shop footer .brand{font-size:13px;letter-spacing:2px;font-style:normal;color:#f5f5f5}
+.simple-shop footer p{color:#a5a8ac}
+.simple-shop a:focus-visible,.simple-shop button:focus-visible{outline:2px solid #38b78a;outline-offset:3px}
+@media(max-width:900px){.simple-shop .nav.light-nav{gap:18px;padding:0 24px}.simple-shop .nav nav{gap:18px;font-size:11px}.simple-shop .photo-wrap{height:320px}.simple-shop .lifestyle-band{margin-left:24px;margin-right:24px}}
+@media(max-width:650px){.simple-shop .nav.light-nav{height:auto;min-height:70px;flex-wrap:wrap;padding:14px 20px;gap:10px}.simple-shop .nav .brand{font-size:12px;letter-spacing:1.5px}.simple-shop .nav nav{order:3;width:100%;justify-content:center;gap:22px;padding:10px 0 2px;margin:0;display:flex;font-size:11px}.simple-shop .header-actions{gap:9px}.simple-shop .shop-title{padding:62px 22px 48px}.simple-shop .shop-title h1{font-size:44px}.simple-shop .shop-title>p:last-child{font-size:16px}.simple-shop .simple-filters{justify-content:flex-start;padding:26px 20px}.simple-shop .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:0 20px 65px;gap:27px 13px}.simple-shop .photo-wrap{height:220px}.simple-shop .photo-info{display:block}.simple-shop .photo-info>strong{display:block;margin-top:8px}.simple-shop .lifestyle-band{margin:0 20px 65px;grid-template-columns:1fr}.simple-shop .lifestyle-band>div{padding:40px 28px}.simple-shop footer{flex-wrap:wrap;padding:30px 20px}}
+@media(max-width:420px){.simple-shop .photo-grid{grid-template-columns:1fr}.simple-shop .photo-wrap{height:340px}}
