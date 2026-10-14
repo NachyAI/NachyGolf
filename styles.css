@@ -98,3 +98,8 @@ html,body{background:#000!important;color:#fff!important}
 .cart span,.cart b{background:#fff!important;color:#000!important}
 footer,.topbar,.nav,.simple-shop .nav.light-nav,.about{border-color:#262626!important}
 button:focus-visible,a:focus-visible{outline:2px solid #fff!important;outline-offset:3px}
+
+/* Consistent NachyGolf NG identity in all navigation headers */
+.site-brand-logo{display:block;width:116px;height:auto;max-height:42px;object-fit:contain}
+.topbar .brand,.nav .brand,.simple-shop .nav .brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1}
+@media(max-width:650px){.site-brand-logo{width:92px;max-height:35px}}
