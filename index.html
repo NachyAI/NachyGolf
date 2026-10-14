@@ -25,22 +25,27 @@
 <script>const t=document.querySelector('.menu-toggle'),n=document.querySelector('#main-nav');t.addEventListener('click',()=>{const open=n.classList.toggle('open');t.setAttribute('aria-expanded',String(open));t.textContent=open?'×':'☰'});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t.setAttribute('aria-expanded','false');t.textContent='☰'}));</script>
 <a class="floating-rewards" href="rewards.html" aria-label="NachyGolf Rewards"><span aria-hidden="true">★</span> Rewards</a>
 <style>
-.twitch-overlay{position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:9998;display:none;align-items:center;justify-content:center;padding:20px}
+.twitch-overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:9998;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(7px)}
 .twitch-overlay.is-visible{display:flex}
-.twitch-dialog{position:relative;width:min(100%,420px);background:#171719;border:1px solid #3a303f;border-radius:16px;padding:36px 28px;text-align:center;color:#fff;box-shadow:0 22px 70px #0009;font-family:inherit}
-.twitch-dialog .twitch-eyebrow{color:#bfa0fa;font-size:12px;letter-spacing:.17em;font-weight:700}
-.twitch-dialog h2{font-size:clamp(25px,5vw,34px);line-height:1.12;margin:15px 0 12px}
-.twitch-dialog p{color:#ccc;line-height:1.5;margin:0 0 24px}
-.twitch-watch{display:inline-block;background:#9146ff;color:white;text-decoration:none;border-radius:8px;padding:14px 24px;font-weight:800;letter-spacing:.03em}
-.twitch-watch:hover{background:#772ce8}
-.twitch-close{position:absolute;top:10px;right:12px;background:transparent;border:0;color:#ccc;font-size:27px;cursor:pointer;padding:4px 9px}
+.twitch-dialog{position:relative;width:min(100%,400px);background:#08090b;border:1px solid #32353c;border-radius:18px;padding:40px 30px 30px;text-align:center;color:#fff;box-shadow:0 26px 90px #000c;font-family:inherit}
+.twitch-logo{display:block;width:128px;max-width:55%;height:auto;margin:0 auto 26px}
+.twitch-dialog .twitch-eyebrow{color:#bfc6d6;font-size:11px;letter-spacing:.2em;font-weight:800}
+.twitch-dialog h2{font-size:clamp(24px,5vw,30px);line-height:1.13;letter-spacing:-.04em;margin:12px 0}
+.twitch-dialog p{color:#b8bcc5;line-height:1.55;margin:0 0 27px;font-size:14px}
+.twitch-watch{display:block;background:#fff;color:#050505;text-decoration:none;border-radius:8px;padding:15px 22px;font-size:12px;font-weight:900;letter-spacing:.09em;transition:background .15s,transform .15s}
+.twitch-watch:hover{background:#dceaff;transform:translateY(-1px)}
+.twitch-close{position:absolute;top:12px;right:13px;background:transparent;border:0;color:#b7b7bd;font-size:25px;cursor:pointer;padding:5px 10px}
+.twitch-close:hover{color:#fff}
+.twitch-dialog a:focus-visible,.twitch-dialog button:focus-visible{outline:2px solid #4db4ff;outline-offset:3px}
+@media(max-width:480px){.twitch-dialog{padding:36px 24px 24px}.twitch-logo{width:110px}}
 </style>
 <div class="twitch-overlay" id="twitch-promo" aria-hidden="true">
  <div class="twitch-dialog" role="dialog" aria-modal="true" aria-labelledby="twitch-title" aria-describedby="twitch-desc">
   <button type="button" class="twitch-close" aria-label="Close Twitch popup">×</button>
+  <img class="twitch-logo" src="assets/ng-logo.svg?v=20261014-blue" alt="NachyGolf NG logo">
   <span class="twitch-eyebrow">NACHY GAMING</span>
   <h2 id="twitch-title">WATCH NACHY ON TWITCH</h2>
-  <p id="twitch-desc">Gaming, streams, and good times. Come hang out with the community.</p>
+  <p id="twitch-desc">Live gaming, good conversations, and a place to hang out. Join the stream.</p>
   <a class="twitch-watch" href="https://www.twitch.tv/realnachy" target="_blank" rel="noopener noreferrer">WATCH ON TWITCH ↗</a>
  </div>
 </div>
