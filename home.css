@@ -62,3 +62,15 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--golf-green);outline
 .fw-category-sub{font-size:10px;letter-spacing:2px;color:#93baa6}
 .fw-category-arrow{position:absolute;bottom:16px;right:20px;font-size:23px;color:#d6b77b}
 .fw-collection .product-meta span{color:#d6b77b;font-size:11px;font-weight:800;letter-spacing:1px}
+
+/* Live Fourthwall catalog */
+.fw-live-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1250px;margin:0 auto;padding:30px 28px 75px;color:#b5c7bc}
+.fw-live-card{display:block;text-decoration:none;color:#f8f8f6;min-width:0}
+.fw-live-image{height:330px;background:#19231f;border:1px solid #294438;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#d6b77b;font-weight:900;letter-spacing:2px}
+.fw-live-image img{width:100%;height:100%;object-fit:contain}
+.fw-live-card:hover .fw-live-image{border-color:#38b78a}
+.fw-live-info{display:flex;justify-content:space-between;gap:15px;padding:13px 2px;font-size:14px;line-height:1.5}
+.fw-live-info span{color:#d6b77b;white-space:nowrap}
+.fw-shop-footer{text-align:center;padding:0 20px 85px}.fw-shop-footer a{display:inline-block;background:#267457;color:white;padding:15px 26px;border-radius:5px;font-weight:800;text-decoration:none}
+@media(max-width:800px){.fw-live-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.fw-live-image{height:250px}}
+@media(max-width:480px){.fw-live-grid{grid-template-columns:1fr}.fw-live-image{height:330px}.fw-live-info{font-size:13px}}
