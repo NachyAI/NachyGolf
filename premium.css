@@ -15,3 +15,7 @@
 
 /* Display the uploaded white NG mark in the homepage philosophy panel. */
 .story-image:after{content:"";background:url("assets/nachygolf-ng-transparent.png") center / contain no-repeat;width:min(72%,440px);height:60%;inset:auto;position:relative;opacity:1;letter-spacing:normal}
+
+/* Final override: prevent legacy NG text pseudo-element from rendering. */
+.story-image::after{content:none!important;display:none!important}
+.story-image>img{display:block;max-width:440px;width:72%;height:auto;object-fit:contain}
