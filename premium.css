@@ -6,3 +6,6 @@
 
 /* Homepage hero uses a restrained brand-color backdrop, not unrelated stock merchandise. */
 .hero{min-height:440px;background:linear-gradient(120deg,#14261b 0%,#263e2d 62%,#455944 100%)}.hero h1{font-size:clamp(62px,9vw,116px)}.story-image{background:linear-gradient(135deg,#334f3a,#14271c);position:relative}.story-image:after{content:"NG";position:absolute;inset:0;display:grid;place-items:center;color:#e7eee7;font-weight:900;font-size:clamp(90px,14vw,190px);letter-spacing:-.09em;opacity:.55}@media(max-width:760px){.hero{min-height:420px}}
+
+/* User-provided golf course photograph for homepage hero */
+.hero{background-image:linear-gradient(90deg,rgba(10,25,17,.65) 0%,rgba(10,25,17,.25) 53%,rgba(10,25,17,.04) 100%),url("assets/Sunlit%20Golf%20Course%20Under%20Vast%20Blue%20Skies.png");background-position:center center;background-size:cover;background-repeat:no-repeat}.hero h1,.hero p,.hero .eyebrow{text-shadow:0 2px 16px rgba(0,0,0,.35)}@media(max-width:760px){.hero{background-position:48% center;background-image:linear-gradient(90deg,rgba(10,25,17,.69),rgba(10,25,17,.18)),url("assets/Sunlit%20Golf%20Course%20Under%20Vast%20Blue%20Skies.png")}}
